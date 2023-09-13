@@ -4,9 +4,8 @@ int productOfList(int a[], int s);
 
 int sumOfList(int a[], int s){
 	int sum = 0;
-	int size = s;
 
-	for (int i = 0; i < size; ++i)
+	for (int i = 0; i < s; ++i)
 	{
 		sum += a[i];
 	}
@@ -15,9 +14,8 @@ int sumOfList(int a[], int s){
 
 int productOfList(int a[], int s){
 	int product = a[0];
-	int size = s;
 
-	for (int i = 1; i < size; ++i)
+	for (int i = 1; i < s; ++i)
 	{
 		product *=  a[i];
 	}
