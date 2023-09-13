@@ -36,6 +36,7 @@ void reverse(int a[], int s){
 		printf("%d ", result[r]);
 		--i;
 	}
+	printf("\n");
 }
 
 int main(){
@@ -69,5 +70,8 @@ int main(){
 
 	int product = productOfList(list, size);
 	printf("Product of List: %d\n", product);
+
+	reverse(list, size);
+
 	return 0;
 }
