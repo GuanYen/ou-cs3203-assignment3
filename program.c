@@ -1,6 +1,7 @@
 #include <stdio.h>
 int sumOfList(int a[], int s);
 int productOfList(int a[], int s);
+void reverse(int a[], int s);
 
 int sumOfList(int a[], int s){
 	int sum = 0;
@@ -22,6 +23,19 @@ int productOfList(int a[], int s){
 		product *=  a[i];
 	}
 	return product;
+}
+
+void reverse(int a[], int s){
+	int result[5];
+	int size = s;
+	
+	printf("Reversed: ");
+	for (int i = size - 1, r = 0; r < size; ++r)
+	{
+		result[r] = a[i];
+		printf("%d ", result[r]);
+		--i;
+	}
 }
 
 int main(){
